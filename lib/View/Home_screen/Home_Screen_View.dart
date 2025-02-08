@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plant_delivery_app/Utils/color.dart';
 import 'package:plant_delivery_app/View%20Model/Home_Screen_VM.dart';
-import 'package:plant_delivery_app/View/Details_Screen/Details_Screen.dart';
+import 'package:plant_delivery_app/View/Details_Screen/Detail_Screen_View.dart';
+
 
 
 class HomeScreen extends StatelessWidget {
@@ -54,7 +55,7 @@ Container bodypart(Size size, BuildContext context) {
           SizedBox(height: 100),
           GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsSrc()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen()));
             },
             child: const Hero(
               tag: 'Flower 1',
@@ -65,52 +66,82 @@ Container bodypart(Size size, BuildContext context) {
               ),
             ),
           ),
-          const   Hero(
-            tag: 'Flower 2',
-            child: HomeScreenVm(
-              image: 'assets/flower 2.png',
-              name: 'Glass water',
-              price: '60',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen2()));
+            },
+            child: const   Hero(
+              tag: 'Flower 2',
+              child: HomeScreenVm(
+                image: 'assets/flower 2.png',
+                name: 'Glass water',
+                price: '60',
+              ),
             ),
           ),
-          const  Hero(
-            tag: 'Flower 3',
-            child: HomeScreenVm(
-              image: 'assets/flower 1.png',
-              name: 'House Shape Close',
-              price: '70',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen3()));
+            },
+            child: const  Hero(
+              tag: 'Flower 3',
+              child: HomeScreenVm(
+                image: 'assets/flower 1.png',
+                name: 'House Shape Close',
+                price: '70',
+              ),
             ),
           ),
-          const Hero(
-            tag: 'Flower 4',
-            child: HomeScreenVm(
-              image: 'assets/flower 4.png',
-              name: 'House Shape Close',
-              price: '80',
+          GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen4()));
+              },
+            child: const Hero(
+              tag: 'Flower 4',
+              child: HomeScreenVm(
+                image: 'assets/flower 4.png',
+                name: 'House Shape Close',
+                price: '80',
+              ),
             ),
           ),
-          const  Hero(
-            tag: 'Flower 5',
-            child: HomeScreenVm(
-              image: 'assets/flower 5.png',
-              name: 'House Shape Close',
-              price: '50',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen5()));
+            },
+            child: const  Hero(
+              tag: 'Flower 5',
+              child: HomeScreenVm(
+                image: 'assets/flower 5.png',
+                name: 'House Shape Close',
+                price: '50',
+              ),
             ),
           ),
-          const  Hero(
-            tag: 'Flower 6',
-            child: HomeScreenVm(
-              image: 'assets/Flower 6.png',
-              name: 'House Shape Close',
-              price: '65',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen6()));
+            },
+            child: const  Hero(
+              tag: 'Flower 6',
+              child: HomeScreenVm(
+                image: 'assets/Flower 6.png',
+                name: 'House Shape Close',
+                price: '65',
+              ),
             ),
           ),
-          const  Hero(
-            tag: 'Flower 7',
-            child: HomeScreenVm(
-              image: 'assets/flower 7.png',
-              name: 'House Shape Close',
-              price: '65',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen7()));
+            },
+            child: const  Hero(
+              tag: 'Flower 7',
+              child: HomeScreenVm(
+                image: 'assets/flower 7.png',
+                name: 'House Shape Close',
+                price: '65',
+              ),
             ),
           )
         ],
